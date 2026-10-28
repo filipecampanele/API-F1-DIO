@@ -1,0 +1,23 @@
+{
+  "name": "f1-api",
+  "version": "1.0.0",
+  "description": "Minimal API da Fórmula 1 com Node.js e Fastify",
+  "main": "dist/server.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir dist",
+    "start": "node dist/server.js"
+  },
+  "keywords": ["nodejs", "fastify", "typescript", "formula1"],
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "fastify": "^4.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.5"
+  }
+}
